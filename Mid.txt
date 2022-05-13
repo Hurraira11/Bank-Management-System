@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title> Website Desgin</title>
+
+<style>
+  /*-----------------------------------------------------------------*/
+/*---------------------Main Nav Bar and logo--------------------------------------------*/
+/*-----------------------------------------------------------------*/
+  *{
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper
+{
+   border: 5px outset red;
+  width: 1170px;
+  margin: auto;
+}
+
+header
+{
+  background: url("pic1.jpg");
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center cover;
+  position: relative;
+}
+
+.nav-area
+{
+  position: absolute;
+  border: 2px outset red;
+  text-align: center;
+  float: right;
+  right:  214px; /* position left right */
+  margin-top: 20px;
+}
+
+.nav-area li
+{
+  display: inline-block;
+}
+
+.nav-area li a
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 25px;
+}
+
+.nav-area li a:hover
+{
+  background: #fff;
+  color: #333;
+}
+
+.logo img
+{
+  border: 5px outset red;
+  width: 130px;
+  float: left;
+  margin: 11px 5px;
+  height: 60px;
+}
+
+.welcome-text
+{
+  position: relative;
+  width:  600px;
+  height: 300px;
+  left:0;
+  margin: 10% 0%; 
+  text-align: center;
+}
+
+.welcome-text h1
+{
+   border: 5px outset red;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+
+}
+
+.welcome-text a
+{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+}
+
+.welcome-text a:hover
+{
+  background: #fff;
+  color: #333;
+}
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*-------------------------------Green button---------------------------------*/
+/*-----------------------------------------------------------------*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.button1 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover 
+{
+  background-color: #4CAF50;
+  color: white;
+}
+/*-----------------------------------------------------------------*/
+/*-----------------Dropdown Button-----------------------------------------------*/
+/*-----------------------------------------------------------------*/
+.dropbtn 
+{
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus 
+{
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f1f1f1;
+  min-width: 104px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/*-----------------------------------------------------------------*/
+/*-------------------------------CSS GRid---------------------------*/
+/*-----------------------------------------------------------------*/
+
+.mid{
+  position: relative;
+  width:  600px;
+  height: 300px;
+  left:0;
+  margin: 01% 26%; 
+  text-align: center;
+}
+
+.mid h1
+{
+   border: 5px outset red;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+
+.grid-container 
+{
+  position: relative;
+  border: 5px outset red;
+  display: grid;
+  gap: 50px 100px;
+  margin: -170px 4px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item 
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+/*-------------------------------CSS GRid  2---------------------------*/
+/*-----------------------------------------------------------------*/
+
+.grid-container2 
+{
+  position: relative;
+  border: 5px outset red;
+  display: grid;
+  gap: 50px 100px;
+  margin: 250px 4px;
+  grid-template-columns: auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item2 
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/*-----------------------------------------------------------------*/
+/*-------------------------------CSS GRid  2---------------------------*/
+/*-----------------------------------------------------------------*/
+
+.last
+{
+  
+  position: relative;
+  border: 5px outset red;
+  margin: -150px 4px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-last
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/*-----------------------------------------------------------------*/
+/*-------------------------------Footer----------------------------*/
+/*-----------------------------------------------------------------*/
+
+
+
+footer{
+    position: absolute;
+     margin: -1110px 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 98vw;
+
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials b{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials b i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials b:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 95vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p b{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li b
+{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li b:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+</style>
+</head>
+
+
+
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="logo.png">
+      </div>
+
+      <ul class="nav-area">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contact</a></li>
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+      </ul>
+    </div>
+    
+    <div class=" welcome-text">
+      <h1> we are creative </h1>
+      <h2> Hello hi bye bye</h2>
+      <button class="button button1">Green</button>
+    </div>
+  </header>
+
+
+
+<div class="mid">
+  <h1>Our Chef</h1>
+</div>
+
+
+
+<div class="grid-container">
+  <div class="grid-item">pic-1</div>
+  <div class="grid-item">pic-2</div>
+  <div class="grid-item">pic-3</div>  
+</div>
+
+
+
+<div class="grid-container2">
+  <div class="grid-item2"> pic</div>
+  <div class="grid-item2">
+    <h1>Best Burger</h1>
+  </div> 
+</div>
+
+
+
+<div class="last">
+  <div class="grid-item2">
+  <h1>Hello</h1>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ <footer>
+        <div class="footer-content">
+            <h3>Foolish Developer</h3>
+            <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
+            <ul class="socials">
+                <li><b href="#"><i class="fa-facebook">f</i></b></li>
+                <li><b href="#"><i class="fa fa-twitter"></i></b></li>
+                <li><b href="#"><i class="fa fa-google-plus"></i></b></li>
+                <li><b href="#"><i class="fa fa-youtube"></i></b></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <b href="#">Foolish Developer</b>  </p>
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><b href="">Home</b></li>
+                        <li><b href="">About</b></li>
+                        <li><b href="">Contact</b></li>
+                      </ul>
+                    </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
